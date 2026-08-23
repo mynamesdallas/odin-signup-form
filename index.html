@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="container-left">
-        <h1>The Figgis Agency</h1>
         <img src="images/no-face.jpg" alt="Man hiding his face behind his hand in a plume of smoke" width="1920" height="2405">
     </div>
     <div class="container-right">
@@ -20,14 +19,18 @@
         <form action="">
             <div class="form-row">
                 <div class="form-group">
-                    <label for="firstName">First Name: <input type="text" name="first" id="firstName"></label>
-                    <label for="lastName">Last Name: <input type="text" name="last" id="lastName"></label>
+                    <label for="firstName">First Name: <input type="text" name="first" id="firstName" required></label>
+                    <label for="lastName">Last Name: <input type="text" name="last" id="lastName" required></label>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group">
-                    <label for="user-email">E-mail: <input type="email" name="mail" id="user-email"></label>
+                    <label for="user-email">E-mail: <input type="email" name="mail" id="user-email" required></label>
                     <label for="user-tel">Phone: <input type="tel" name="phone" id="user-tel"></label>
+                </div>
+                <div class="form-group">
+                    <label for="psw">Password:<input type="text" name="password" id="psw"></label>
+                    <label for="confirm">Confirm Password: <input type="text" name="confirm" id="confirm"></label>
                 </div>
             </div>
         </form>

@@ -30,15 +30,6 @@ body {
     object-fit: cover;
 }
 
-.container-left h1 {
-    font-family: "Vina Sans";
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-}
-
 .container-right {
     background-color: oklch(37.4% 0.01 67.558);
     width: 60%;
@@ -100,6 +91,7 @@ form {
     width: 100%;
     padding: 5px;
     margin-top: 5px;
+    margin-bottom: 1rem;
     border: 1px solid lightgrey;
     border-radius: 4px;
 }
