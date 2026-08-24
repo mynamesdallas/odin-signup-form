@@ -16,7 +16,7 @@
             <h2>This is totally not a made up sign-up form that does nothing.</h2>
             <p>Definitely not a secret organization. <em>Just keep scrolling.</em></p>
         </header>
-        <form action="">
+        <form id="myForm" action="">
             <div class="form-row">
                 <div class="form-group">
                     <label for="firstName">First Name: <input type="text" name="first" id="firstName" required></label>
@@ -29,13 +29,13 @@
                     <label for="user-tel">Phone: <input type="tel" name="phone" id="user-tel"></label>
                 </div>
                 <div class="form-group">
-                    <label for="psw">Password:<input type="text" name="password" id="psw"></label>
-                    <label for="confirm">Confirm Password: <input type="text" name="confirm" id="confirm"></label>
+                    <label for="psw">Password:<input type="password" name="password" id="psw" required></label>
+                    <label for="confirm">Confirm Password: <input type="password" name="confirm" id="confirm" required></label>
                 </div>
             </div>
         </form>
         <div class="action-container">
-            <button>Create Account</button>
+            <button form="myForm" type="submit">Create Account</button>
             <p>Already have an account <a href="#">Login</a></p>
         </div>
     </div>

@@ -96,10 +96,27 @@ form {
     border-radius: 4px;
 }
 
+.form-row input:valid {
+    outline: 1px solid green;
+}
+
+.form-row input:invalid {
+    outline: 1px solid red;
+}
+
+.form-row input:focus {
+    outline: 2px solid blue;
+}
+
 .action-container {
     width: 90%;
     max-width: 600px;
     padding-left: 2em;
+}
+
+.action-container p,
+.action-container a {
+    font-size: 1.5rem;
 }
 
 a {
@@ -158,11 +175,13 @@ button:active {
     .container-left {
         width: 100%;
         height: 75%;
+        margin-bottom: 0;
     }
 
     .container-right {
         width: 100%;
         height: auto;
-        margin-bottom: 5rem;
+        padding-bottom: 5rem;
+        margin-top: 0;
     }
 }
