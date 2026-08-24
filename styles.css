@@ -34,52 +34,52 @@ body {
     background-color: oklch(37.4% 0.01 67.558);
     width: 60%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
 }
 
 form {
+    background-color: oklch(21.6% 0.006 56.043);
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
     padding: 3em 2em;
     margin-bottom: 2.5em;
     display: flex;
     flex-direction: column;
 }
 
-.form-header,
-form {
-    background-color: oklch(21.6% 0.006 56.043);
-    color: whitesmoke;
-    border: none;
-    border-radius: 3px;
-    width: 90%;
-    max-width: 600px;
-}
-
 .form-header {
-    text-align: center;
+    color: whitesmoke;
+    text-align: left;
     margin: 2.5em 0;
     padding: 2em;
 }
 
 .form-header h2 {
-    font-size: 2em;
+    font-size: 4rem;
 }
 
 .form-header p {
-    font-size: 1.3em;
+    font-size: 3rem;
+}
+
+.form-header em {
+    font-size: 2rem;
 }
 
 .form-group {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     width: 100%;
 }
 
 .form-group label {
-    align-items: center;
-    gap: 1rem;
-    flex: 1;
+    align-items: left;
+    width: 25%;
 }
 
 .form-group label:hover {
@@ -100,7 +100,7 @@ form {
     outline: 1px solid green;
 }
 
-.form-row input:invalid {
+.form-row input:invalid:not(:placeholder-shown) {
     outline: 1px solid red;
 }
 
@@ -109,8 +109,7 @@ form {
 }
 
 .action-container {
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
     padding-left: 2em;
 }
 
