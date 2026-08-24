@@ -160,6 +160,11 @@ button:active {
     .form-group {
         display: flex;
         flex-direction: column;
+        gap: 2px;
+    }
+
+    .form-group label {
+        width: 100%;
     }
 
     .form-row input {
